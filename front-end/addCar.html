@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Car</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="addCar.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-box">
+        <a href="index.html">CARS</a>
+        <a href="addCar.html">ADD CAR</a>
+        </div>
+    </nav>
+    <div class="mainContainer">
+        <form>
+
+            <div>
+            <label for="title">Car model:</label><br>
+            <input type="text" name="title" id="title" required placeholder="BMW 3">
+            </div>
+
+            <div>
+            <label for="image">Enter your imgage url:</label><br>
+            <input type="text" name="image" id="image" placeholder="image URL">
+            </div>
+
+            <div>
+            <label for="price">Price:</label><br>
+            <input type="number" id="price" name="price" required placeholder="50000.00">
+            </div>
+
+            <div>
+            <label for="numberplates">License plate:</label><br>
+            <input type="text" name="numberplates" id="numberplates" required maxlength="6" placeholder="ABC123">
+            </div>
+            <button type="submit" id="addCarButton">Submit</button>
+        </form>
+    </div>
+    <div id="message"></div>
+
+
+
+    <script src="addCar.js"></script>
+</body>
+</html>
